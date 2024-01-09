@@ -12,9 +12,26 @@
     
 </body>
 <script>
-   setInterval(function(){
-    console.log("avneesh",Date.now().toString());
-   },2000) 
+  const sayDate=function(str){
+    console.log(str,Date.now());
+  }
+  let intervalId
+  const start=function(){
+    if(!intervalId){
+        intervalId=setInterval(sayDate,1000,"avneesh")
+
+    }
+
+  }
+  const stop=function(){
+    clearInterval(intervalId);
+    intervalId=null;
+  }
+  document.querySelector("start").addEventListener("click",start);
+  document.querySelector("#stop").addEventListener("click",stop)
+
+
+  
   
 </script>
 
