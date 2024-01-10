@@ -8,4 +8,20 @@
 <body>
     
 </body>
+<script>
+    const reqUrl="https://randomuser.me/api/"
+    const xhr=new XMLHttpRequest()
+    xhr.open("GET",reqUrl)
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState===4){
+      const data=JSON.parse(this.responseText)
+      console.log(typeof data);
+      console.log(data);
+        }
+     
+    }
+    console.log("here");
+    xhr.send()
+
+</script>
 </html>
