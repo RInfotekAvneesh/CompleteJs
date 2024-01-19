@@ -1,0 +1,9 @@
+.relative{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    border:2px solid black;
+    position: fixed;
+    top: 70px;
+    left: 70px;  
+}
