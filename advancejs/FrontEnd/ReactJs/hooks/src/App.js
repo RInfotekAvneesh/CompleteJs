@@ -4,6 +4,7 @@ import Tailwind from "./Tailwind";
 import Card from "./components/card";
 import Counter from "./components/Counter";
 import BgChanger from "./components/BgChanger";
+import UseEffect from "./components/UseEffect";
 
 function App() {
   const myobj = {
@@ -19,6 +20,7 @@ function App() {
       <Card someObj={myArr} someObj2={myobj} />
       <Counter />
       <BgChanger />
+      <UseEffect />
     </div>
   );
 }
