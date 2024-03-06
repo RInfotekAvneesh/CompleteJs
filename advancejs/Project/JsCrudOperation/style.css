@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+.header{
+    padding: 10px 30px;
+    width: 100%;
+    background-color: #ff997f;
+}
+.header h1{
+  
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+.upper-btn-box{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    padding: 30px;
+}
+.upper-btn-box .left-box{
+    width: 50%;
+    height: 100%;
+    
+
+}
+.upper-btn-box .right-box{
+    width: 50%;
+    height: 100%;
+  
+
+}
+.upper-btn-box .left-box button ,.upper-btn-box .right-box button{
+border: none;
+outline: none;
+background-color: cadetblue;
+padding: 7px;
+font-size: 20px;
+font-family: Verdana;
+color: #ffff;
+margin-left:10px;
+border-radius: 10px;
+}
+.upper-btn-box .right-box{
+    width: 50%;
+    height: 100%;
+  
+    display: flex;
+   
+
+}
+.upper-btn-box .right-box i{
+    font-size: 25px;
+    color: #ff9900;
+    padding: 10px;
+}
+.upper-btn-box .right-box input{
+    width: 80%;
+    padding: 13px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+
+}
+/* start table coding */
+.table-box{
+    width: 100%;
+    padding: 30px;
+}
+.table-box table{
+    width: 100%;
+   
+
+}
+.table-box table tr th{
+    font-size: 20px;
+    border-right: 1px solid #cccc;
+    padding: 20px 0px 0px;
+    font-family: Verdana;
+    border-bottom: 1px solid #cccc;
+}
+.table-box table tr td{
+    border-right: 1px solid #cccc;
+    padding: 10px 0px 0px;
+    text-align: center;
+    font-family: Verdana;
+    border-bottom: 1px solid #cccc;
+    
+
+
+}
+.table-box table tr td button{
+    border: none;
+outline: none;
+width: 30%;
+background-color:green;
+padding: 10px;
+text-align: center;
+border-radius: 5px;
+margin-bottom: 10px;
+color: azure;
+
+
+
+}
+/* Model Coding */
+.modal{
+   width: 0%;
+    position: fixed;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    border-top: 10px groove #ff9900;
+    opacity: 0;
+  z-index: -1;
+  transition:  0.5s ease-in-out;
+     
+}
+.modal.active{
+    opacity: 1;
+    z-index: 1;
+    width: 50%;
+}
+
+.modal .close-icon{
+   position: absolute;
+   right:-15px;
+   top:-30px;
+   font-size: 30px;
+   color:rgb(255, 0, 43);
+
+
+}
+.modal .left-modal{
+    width: 30%;
+    height: 100%;
+display: flex;
+background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+border-right: 5px groove #ff9900;
+
+
+}
+
+
+.modal .left-modal .img-box{
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+}
+.modal .right-modal{
+    width: 70%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+    padding: 30px;
+  
+    
+}
+.modal .right-modal .input-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.modal .right-modal .input-box label{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 10px 0px;
+   
+   
+}
+.modal .right-modal .input-box input{
+    width: 70%;
+    margin: 10px 0px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #4e4376;
+}
+.modal .right-modal .input-box button{
+    width: 50%;
+    border: none;
+outline: none;
+background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+padding: 7px;
+font-size: 20px;
+font-family: Verdana;
+color: #ffff;
+margin: 15px 5px;
+border-radius: 5px;
+
+}
